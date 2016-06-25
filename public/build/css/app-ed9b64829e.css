@@ -1,0 +1,146 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  padding-bottom: 100px;
+  font-family: 'Lato'; }
+
+body.fix {
+  padding-top: 50px; }
+
+.fa-btn {
+  margin-right: 6px; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-bottom: 0px; }
+
+.navbar.navbar-default.black {
+  background-color: black; }
+
+.navbar-default .navbar-nav > li > a {
+  color: yellow; }
+
+.navbar-default .navbar-nav > li:hover {
+  border-bottom: 1px solid white; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white; }
+
+#info {
+  background-color: #fff;
+  min-height: 480px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+#info .info-name, .resume-header {
+  text-align: center;
+  color: lightgrey;
+  margin-bottom: 20px; }
+
+#info .info-introduction > div {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+#info .info-introduction h1 {
+  text-align: left;
+  font-weight: bold; }
+
+#info .info-introduction p {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.8em;
+  font-size: 1.2em; }
+
+#info .info-introduction .experties-experience {
+  float: right; }
+
+#info .info-introduction .progress {
+  background-color: #2d2020;
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#info .info-introduction .progress > .progress-bar {
+  background-color: #cbb4b4; }
+
+#info .person_image {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+#info .person_image > img {
+  height: 100%;
+  width: 100%; }
+
+#resume {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f7f7f7; }
+
+#resume .resume-details h2 {
+  text-align: left;
+  font-weight: bold; }
+
+#resume .resume-details p {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.8em;
+  font-size: 1.2em; }
+
+#resume .resume-experience {
+  text-align: center; }
+
+#resume .resume-experience > h2 {
+  line-height: 2.8em;
+  font-size: 2.4em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  text-align: right; }
+
+#resume .resume-experience > h3 {
+  line-height: 1.2em;
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: right; }
+
+#work, #contact {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+#work .work-header h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+#contact .contact-header {
+  padding-bottom: 30px; }
+
+#contact .contact-header > h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+#contact .contact-header > h3 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black; }
+
+/*# sourceMappingURL=app.css.map */

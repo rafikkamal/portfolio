@@ -1,0 +1,166 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$header-height:50px;
+$footer-height:100px;
+$info-padding:30px;
+
+$image-height:100%;
+$image-width:100%;
+$info-image-padding:50px;
+$progress-bar-color:#eae1e1;
+
+html{
+    position:relative;
+    min-height: 100%;
+}
+body{
+    padding-bottom:$footer-height;
+    font-family: 'Lato';
+}
+body.fix{
+    padding-top:$header-height;
+}
+.fa-btn {
+    margin-right: 6px;
+}
+
+.navbar{
+    margin-bottom:0px;
+}
+.navbar-default{
+    background-color: transparent;
+    border-bottom: 0px;
+}
+.navbar.navbar-default.black{
+    background-color: black;
+}
+.navbar-default .navbar-nav > li > a {
+    color:yellow;
+}
+.navbar-default .navbar-nav > li:hover{
+    border-bottom: 1px solid white;
+}
+.navbar-default .navbar-nav > li>a:hover{
+    color: white;
+}
+#info{
+    background-color: #fff;
+    min-height: 480px;
+    padding-top:$info-padding;
+    padding-bottom:$info-padding;
+}
+#info .info-name, .resume-header{
+    text-align: center;
+    color:lightgrey;
+    margin-bottom: 20px;
+}
+#info .info-introduction > div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#info .info-introduction h1{
+    text-align: left;
+    font-weight: bold;
+}
+#info .info-introduction p{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+#info .info-introduction .experties-name{
+    
+}
+#info .info-introduction .experties-experience{
+    float: right;
+}
+
+#info .info-introduction .progress{
+    background-color: darken($progress-bar-color,75);
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#info .info-introduction .progress > .progress-bar{
+    background-color: darken($progress-bar-color,15);
+}
+#info .person_image{
+    padding-top:$info-image-padding;
+    padding-bottom:$info-image-padding;
+}
+
+#info .person_image>img{
+    height:$image-height;
+    width:$image-width;
+}
+#resume{
+    padding-top:$info-padding;
+    padding-bottom:$info-padding;
+    background-color: #f7f7f7;
+}
+#resume .resume-details h2{
+    text-align: left;
+    font-weight: bold;
+}
+#resume .resume-details p{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+#resume .resume-experience{
+    text-align: center;
+}
+#resume .resume-experience > h2{
+    line-height: 2.8em;
+    font-size: 2.4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-align: right;
+}
+#resume .resume-experience > h3{
+    line-height: 1.2em;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+#work, #contact{
+    padding-top:$info-padding;
+    padding-bottom:$info-padding;
+}
+
+#work .work-header h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#contact .contact-header{
+    padding-bottom: 30px;
+}
+#contact .contact-header > h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+} 
+
+#contact .contact-header > h3{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+footer{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    height:$footer-height;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color:black;
+}
+
