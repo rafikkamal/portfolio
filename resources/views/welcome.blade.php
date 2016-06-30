@@ -138,20 +138,20 @@
                 <h1>Latest Project</h1>
             </div>
             <div class="col-sm-3">
-                <img src="{{ asset('img/image_1.jpg') }}" alt="banner image" class="">
-                <img src="{{ asset('img/image_2.jpg') }}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_1.jpg') !!}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_2.jpg') !!}" alt="banner image" class="">
             </div>
             <div class="col-sm-3">
-                <img src="{{ asset('img/image_4.jpg') }}" alt="banner image" class="">
-                <img src="{{ asset('img/image_5.jpg') }}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_4.jpg') !!}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_5.jpg') !!}" alt="banner image" class="">
             </div>
             <div class="col-sm-3">
-                <img src="{{ asset('img/image_1.jpg') }}" alt="banner image" class="">
-                <img src="{{ asset('img/image_2.jpg') }}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_1.jpg') !!}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_2.jpg') !!}" alt="banner image" class="">
             </div>
             <div class="col-sm-3">
-                <img src="{{ asset('img/image_4.jpg') }}" alt="banner image" class="">
-                <img src="{{ asset('img/image_5.jpg') }}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_4.jpg') !!}" alt="banner image" class="">
+                <img src="{!! secure_asset('img/image_5.jpg') !!}" alt="banner image" class="">
             </div>
         </div>
     </div>
@@ -174,15 +174,15 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="{{ asset('img/slider/slider_1.jpg') }}" alt="banner image" class="img-responsive">
+                        <img src="{!! secure_asset('img/slider/slider_1.jpg') !!}" alt="banner image" class="img-responsive">
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/slider/slider_2.jpg') }}" alt="banner image" class="img-responsive">
+                        <img src="{!! secure_asset('img/slider/slider_2.jpg') !!}" alt="banner image" class="img-responsive">
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/slider/slider_3.jpg') }}" alt="banner image" class="img-responsive">
+                        <img src="{!! secure_asset('img/slider/slider_3.jpg') !!}" alt="banner image" class="img-responsive">
                     </div>
 
                     <div class="item">
