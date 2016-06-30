@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid banner" id="banner">
     <div class="row">
-        <img src="{{ asset('img/banner.png') }}" alt="banner image" class="img-responsive">
+        <img src="{!! secure_asset('img/banner.png') !!}" alt="banner image" class="img-responsive">
     </div>
 </div>
 <div class="container" id="info">
@@ -186,7 +186,7 @@
                     </div>
 
                     <div class="item">
-                        <img src="{{ asset('img/slider/slider_1.jpg') }}" alt="banner image" class="img-responsive">
+                        <img src="{!! secure_asset('img/slider/slider_1.jpg') !!}" alt="banner image" class="img-responsive">
                     </div>
                 </div>
 
