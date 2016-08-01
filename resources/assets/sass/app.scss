@@ -8,6 +8,9 @@ $image-width:100%;
 $info-image-padding:50px;
 $progress-bar-color:#eae1e1;
 
+//for media view midium
+$screen-sm-min: 768px;
+
 html{
     position:relative;
     min-height: 100%;
@@ -42,15 +45,44 @@ body.fix{
 .navbar-default .navbar-nav > li>a:hover{
     color: white;
 }
+#banner{
+    height:670px;
+}
+#banner > row{
+    position:relative;
+}
+#banner .banner-img{
+    height:670px;
+    width:100%;
+}
+#banner .banner-name{
+    text-align: center;
+    color:yellow;
+    font-size: 8em;
+    font-weight: bold;
+    position:absolute;
+    height: 90%;
+    width: 100%;
+    padding-top:200px;
+    padding-bottom:200px;
+    top:0;
+}
+#banner .banner-detail{
+    text-align: center;
+    color:yellow;
+    font-size: 0.2em;
+    font-weight: bold;
+    display: block;
+}
 #info{
-    background-color: #fff;
+    background-color: darken(#ffffff,0%);
     min-height: 480px;
     padding-top:$info-padding;
     padding-bottom:$info-padding;
 }
 #info .info-name, .resume-header{
     text-align: center;
-    color:lightgrey;
+    color:black;
     margin-bottom: 20px;
 }
 #info .info-introduction > div{
@@ -69,7 +101,7 @@ body.fix{
     font-size: 1.2em;
 }
 #info .info-introduction .experties-name{
-    
+
 }
 #info .info-introduction .experties-experience{
     float: right;
@@ -88,7 +120,29 @@ body.fix{
     padding-top:$info-image-padding;
     padding-bottom:$info-image-padding;
 }
-
+#info .info-social-network{
+    text-align: center;
+}
+#info .info-social-network > div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#info .info-social-network > div .fa-info-social-icon > span{ 
+    background: darken(#ffffff,10%);
+    border: 5px solid darken(#ffffff,50%);
+    width:122px;
+    height:122px;
+    border-radius: 50%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#info .info-social-network > div .fa-info-social-icon > span:hover{
+    background: darken(#ffffff,30%);
+    border: 5px solid darken(#ffffff,70%);
+    cursor:pointer;
+}
 #info .person_image>img{
     height:$image-height;
     width:$image-width;
@@ -96,7 +150,7 @@ body.fix{
 #resume{
     padding-top:$info-padding;
     padding-bottom:$info-padding;
-    background-color: #f7f7f7;
+    background-color: darken(#ffffff,15%);
 }
 #resume .resume-details h2{
     text-align: left;
@@ -128,15 +182,73 @@ body.fix{
     text-align: right;
 }
 
-#work, #contact{
+
+#work{
     padding-top:$info-padding;
     padding-bottom:$info-padding;
+    background-color: darken(#ffffff,90%);
 }
-
 #work .work-header h1{
     text-align: center;
+    color:white;
     font-weight: bold;
     margin-bottom: 20px;
+}
+#work .project{
+    background: darken(#ffffff,0%);
+    padding-bottom:15px;
+    border:2px solid #2f85ae;
+    box-shadow:2px 2px 5px #2f85ae;
+    margin-bottom: 15px;
+    border-radius: .5em;
+}
+#work .project-title{
+    padding-left:15px;
+    padding-right: 15px;
+    color:white;
+    font-weight: bold;
+}
+#work .project-logo{
+    float:right;
+    padding-right: 15px;
+}
+#work .project-logo > .fa:not(:last-child){
+    padding-right: 15px;
+}
+#work .project-summary{
+    padding:15px;    
+    color:black;
+    border-bottom: 1px solid lighten(#000000,95%);
+    min-height: 110px;
+    font-size: 13px;
+}
+#work .project-built-on{
+    padding-left:15px;
+    padding-right: 15px;
+    color:red;
+    font-size:12px;
+}
+#work .project-view{
+    float:right;
+    padding-right:15px;
+    font-size:12px;
+}
+#work .project-image{
+    height:200px;
+    width:100%;
+    padding-bottom: 15px;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+#contact{
+    padding-top:$info-padding;
+    padding-bottom:$info-padding;
+    background-color: darken(#ffffff,0%);
+}
+#contact > div p{
+    color:black;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 #contact .contact-header{
     padding-bottom: 30px;
@@ -154,6 +266,15 @@ body.fix{
     text-align: center;
 }
 
+#contact .btn-form-submit{
+    width:100%;
+}
+
+#contact .contact-google-map{
+    width:100%;
+    height:470px;
+}
+
 footer{
     position:absolute;
     width:100%;
@@ -163,4 +284,14 @@ footer{
     padding-bottom:15px;
     background-color:black;
 }
+
+@media (max-width: $screen-sm-min) { 
+    #banner .banner-name{
+        font-size: 5em;
+    }
+    #banner .banner-detail{
+        font-size: 0.3em;
+    }
+}
+
 

@@ -3,7 +3,10 @@
 @section('content')
 <div class="container-fluid banner" id="banner">
     <div class="row">
-        <img src="{!! secure_asset('img/banner.png') !!}" alt="banner image" class="img-responsive">
+        <img src="{{asset('img/banner_2.jpg') }}" alt="banner image" class="img-responsive banner-img">
+        <div class="banner-name">MD RAFIK KAMAL
+            <span class="banner-detail">DEVELOPER | DESIGNER | DATA MINING</span>
+        </div>
     </div>
 </div>
 <div class="container" id="info">
@@ -76,8 +79,16 @@
                 </div>
             </div>
         </div>
-        <div class="info-icon info-disable">
-
+        <div class="col-sm-12 info-social-network">
+            <div>
+                <span class="fa-lg fa-info-social-icon fa-4x">
+                    <span class="fa fa-facebook" aria-hidden="true"></span>
+                    <span class="fa fa-linkedin" aria-hidden="true"></span>
+                    <span class="fa fa-instagram" aria-hidden="true"></span>
+                    <span class="fa fa-google-plus" aria-hidden="true"></span>
+                    <span class="fa fa-twitter" aria-hidden="true"></span>
+                </span>
+            </div>
         </div>
     </div>
 </div>
@@ -137,21 +148,102 @@
             <div class="work-header">
                 <h1>Latest Project</h1>
             </div>
-            <div class="col-sm-3">
-                <img src="{!! secure_asset('img/image_1.jpg') !!}" alt="banner image" class="">
-                <img src="{!! secure_asset('img/image_2.jpg') !!}" alt="banner image" class="">
+            <div class="col-sm-4 col-md-3">
+                <div class="project">
+                    <img src="{{asset('img/work/site_1.png') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">FACEBOOK</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.
+                        This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">LARAVEL 5</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
+                <div class="project">
+                    <img src="{{asset('img/work/site_2.jpg') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">ALAN GREENS PAN</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">CODE IGNITER 3</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <img src="{!! secure_asset('img/image_4.jpg') !!}" alt="banner image" class="">
-                <img src="{!! secure_asset('img/image_5.jpg') !!}" alt="banner image" class="">
+            <div class="col-sm-4 col-md-3">
+                <div class="project">
+                    <img src="{{asset('img/work/site_3.jpg') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">YAHOO</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">SYMFONY 2</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
+                <div class="project">
+                    <img src="{{asset('img/work/site_1.jpg') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">GMIAL</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">LARAVEL 5</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <img src="{!! secure_asset('img/image_1.jpg') !!}" alt="banner image" class="">
-                <img src="{!! secure_asset('img/image_2.jpg') !!}" alt="banner image" class="">
+            <div class="col-sm-4 col-md-3">
+                <div class="project">
+                    <img src="{{asset('img/work/site_1.jpg') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">FACEBOOK</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">LARAVEL 5</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
+                <div class="project">
+                    <img src="{{asset('img/work/site_2.jpg') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">FACEBOOK</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">LARAVEL 5</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <img src="{!! secure_asset('img/image_4.jpg') !!}" alt="banner image" class="">
-                <img src="{!! secure_asset('img/image_5.jpg') !!}" alt="banner image" class="">
+            <div class="col-sm-4 col-md-3">
+                <div class="project">
+                    <img src="{{asset('img/work/site_3.jpg') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">FACEBOOK</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">LARAVEL 5</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
+                <div class="project">
+                    <img src="{{asset('img/work/site_1.jpg') }}" alt="banner image" class="project-image">
+                    <span class="project-title"><a href="#">FACEBOOK</a></span>
+                    <span class="fa-lg project-logo">
+                        <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </span>
+                    <p class="project-summary">This is a website buit for social interaction between friends.</p>
+                    <span class="project-built-on">LARAVEL 5</span>
+                    <span class="project-view"><a href="#">VISIT SITE</a></span>
+                </div>
             </div>
         </div>
     </div>
@@ -174,19 +266,19 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="{!! secure_asset('img/slider/slider_1.jpg') !!}" alt="banner image" class="img-responsive">
+                        <img src="{{asset('img/slider/slider_1.jpg') }}" alt="banner image" class="img-responsive">
                     </div>
 
                     <div class="item">
-                        <img src="{!! secure_asset('img/slider/slider_2.jpg') !!}" alt="banner image" class="img-responsive">
+                        <img src="{{asset('img/slider/slider_2.jpg') }}" alt="banner image" class="img-responsive">
                     </div>
 
                     <div class="item">
-                        <img src="{!! secure_asset('img/slider/slider_3.jpg') !!}" alt="banner image" class="img-responsive">
+                        <img src="{{asset('img/slider/slider_3.jpg') }}" alt="banner image" class="img-responsive">
                     </div>
 
                     <div class="item">
-                        <img src="{!! secure_asset('img/slider/slider_1.jpg') !!}" alt="banner image" class="img-responsive">
+                        <img src="{{asset('img/slider/slider_1.jpg') }}" alt="banner image" class="img-responsive">
                     </div>
                 </div>
 
@@ -211,6 +303,13 @@
                 <h3>Contact</h3>
             </div>
             <div class="col-sm-6">
+                <p>
+                    We are here to answer any questions you may have about our combadi experiences. 
+                    Reach out to us and we'll respond as soon as we can.
+                    <br/>
+                    Even if there is something you have always wanted to experience and can't find it on combadi, 
+                    let us know and we promise we'll do our best to find it for you and send you there
+                </p>
                 <form class="form" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Name">
@@ -222,13 +321,13 @@
                         <input type="text" class="form-control" placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" style="max-width:100%;" placeholder="Message"></textarea>
+                        <textarea class="form-control" style="max-width:100" rows="8" placeholder="Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-lg btn-form-submit">SUBMIT MESSAGE</button>
                 </form>
             </div>
             <div class="col-sm-6">
-                <div id="googleMap" style="width:100%;height:380px;"></div>
+                <div id="googleMap" class="contact-google-map"></div>
             </div>
         </div>
     </div>
@@ -239,12 +338,12 @@
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
 function initialize() {
-var mapProp = {
-center:new google.maps.LatLng(51.508742,-0.120850),
-zoom:5,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var mapProp = {
+        center: new google.maps.LatLng(23.8216243, 90.3580121),
+        zoom: 5,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
